@@ -17,7 +17,7 @@ lang: ja-JP
 title: Kizutama's Blog
 email: Kizutama.suyu@gmail.com
 description:
-baseurl: kizutama.github.io
+baseurl: ""
 url: http://kizutama.com/
 author:
   name: 玊玉_Kizutama
