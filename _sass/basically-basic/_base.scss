@@ -426,3 +426,29 @@ input[type="range"]::-ms-thumb {
   font-size: 16px;
   /* 圆点上的符号大小 */
 }
+
+/* 媒体查询：当屏幕宽度小于等于 600px 时，改为上下排列 */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    /* 改为上下排列 */
+    align-items: center;
+    /* 居中对齐 */
+    gap: 10px;
+    /* 可以根据需要调整间距 */
+  }
+
+  .controls-container {
+    width: 100%;
+    /* 使控制面板占据整个宽度 */
+    text-align: center;
+    /* 控制面板中的内容居中对齐 */
+  }
+
+  .text-container {
+    width: 100%;
+    /* 使文字区域占据整个宽度 */
+    text-align: center;
+    /* 文字居中对齐 */
+  }
+}
