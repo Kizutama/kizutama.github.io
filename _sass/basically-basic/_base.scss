@@ -451,4 +451,11 @@ input[type="range"]::-ms-thumb {
     text-align: center;
     /* 文字居中对齐 */
   }
+  .container {
+  display: flex;
+  align-items: start;
+  /* 让内容居中 */
+  height: 100vh;
+  /* 使容器占满整个视口高度 */
+  }
 }
