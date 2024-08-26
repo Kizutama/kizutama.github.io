@@ -56,6 +56,12 @@ font-family: 'KizutamaBlogTitle';
   
 }
 
+@font-face {
+  font-family: 'Zeng_stemp';
+    src: url('/fonts/Zeng_stemp-0.02VF.woff2') format('woff2');
+
+}
+
 .EliKusaTitle {
   font-family: 'Eli.kusa.0.95-demo';
   font-weight: 100;
@@ -116,6 +122,11 @@ font-family: 'KizutamaBlogTitle';
   height: auto;
 }
 
+.zeng-font-demo {
+  font-family: 'Zeng_stemp', sans-serif;
+  font-variation-settings: "HAPY" 900, "ANGE" 900, "GRIE" 0, "JOOY" 0;
+  font-size: 40vmax;
+}
 
 /* ==========================================================================
    Base elements
@@ -239,3 +250,179 @@ a {
 // }
 
 
+// Zeng-Font
+
+.container {
+  display: flex;
+  align-items: center;
+  /* 让内容居中 */
+  height: 100vh;
+  /* 使容器占满整个视口高度 */
+}
+
+.text-container {
+  flex: 0 0 60%;
+  /* 占容器的 60% */
+  display: flex;
+  align-items: center;
+  /* 使文字在垂直方向居中 */
+  justify-content: center;
+  /* 使文字在水平方向居中 */
+}
+
+.controls-container {
+  flex: 0 0 40%;
+  /* 占容器的 40% */
+  padding: 20px;
+  /* 添加一些内边距以提高可读性 */
+}
+
+.control-container {
+  margin-bottom: 20px;
+  /* 控制滑动条之间的间距 */
+}
+
+/* 滑动条容器的样式 */
+input[type="range"] {
+  -webkit-appearance: none;
+  /* 移除默认样式 */
+  width: 100%;
+  /* 滑动条宽度 */
+  height: 0.3pt;
+  /* 滑动条高度 */
+  background: transparent;
+  /* 滑动条背景透明 */
+  position: relative;
+}
+
+/* 滑动条的样式 */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.3pt;
+  /* 滑动条的高度 */
+  background: lightgray;
+  /* 未滑动部分的颜色 */
+  border: none;
+  /* 去除边框 */
+}
+
+/* 滑动条已滑动部分的样式 */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* 移除默认样式 */
+  width: 16px;
+  /* 滑动条圆点的宽度 */
+  height: 16px;
+  /* 滑动条圆点的高度 */
+  background: brown;
+  /* 滑动条圆点的颜色 */
+  border-radius: 50%;
+  /* 圆点形状 */
+  cursor: pointer;
+  /* 鼠标悬停时的样式 */
+  font-family: 'Eli.kusa.0.95-demo';
+  /* 自定义字体 */
+  text-align: center;
+  /* 字符居中对齐 */
+  line-height: 16px;
+  /* 行高等于圆点的高度以垂直居中 */
+  color: white;
+  /* 圆点内文字的颜色 */
+  position: relative;
+  top: -6px;
+  /* 调整圆点的位置，使其与滑动条对齐 */
+  content: '✾';
+  /* 圆点上的符号 */
+  font-size: 16px;
+  /* 圆点上的符号大小 */
+}
+
+/* 滑动条已滑动部分的样式 */
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 0.3pt;
+  /* 滑动条的高度 */
+  background: lightgray;
+  /* 未滑动部分的颜色 */
+  border: none;
+  /* 去除边框 */
+}
+
+/* 滑动条已滑动部分的样式 */
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  /* 滑动条圆点的宽度 */
+  height: 16px;
+  /* 滑动条圆点的高度 */
+  background: brown;
+  /* 滑动条圆点的颜色 */
+  border-radius: 50%;
+  /* 圆点形状 */
+  cursor: pointer;
+  /* 鼠标悬停时的样式 */
+  font-family: 'Eli.kusa.0.95-demo';
+  /* 自定义字体 */
+  text-align: center;
+  /* 字符居中对齐 */
+  line-height: 16px;
+  /* 行高等于圆点的高度以垂直居中 */
+  color: white;
+  /* 圆点内文字的颜色 */
+  content: '✾';
+  /* 圆点上的符号 */
+  font-size: 16px;
+  /* 圆点上的符号大小 */
+}
+
+/* 滑动条已滑动部分的样式 */
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 0.3pt;
+  /* 滑动条的高度 */
+  background: transparent;
+  /* 滑动条背景透明 */
+  border-color: transparent;
+  /* 去除边框 */
+  color: transparent;
+  /* 去除文字颜色 */
+  border-width: 0;
+  /* 去除边框宽度 */
+}
+
+/* 滑动条已滑动部分的样式 */
+input[type="range"]::-ms-fill-lower {
+  background: brown;
+  /* 滑动条已滑动部分的颜色 */
+}
+
+/* 滑动条未滑动部分的样式 */
+input[type="range"]::-ms-fill-upper {
+  background: lightgray;
+  /* 滑动条未滑动部分的颜色 */
+}
+
+/* 滑动条圆点的样式 */
+input[type="range"]::-ms-thumb {
+  width: 16px;
+  /* 滑动条圆点的宽度 */
+  height: 16px;
+  /* 滑动条圆点的高度 */
+  background: brown;
+  /* 滑动条圆点的颜色 */
+  border-radius: 10%;
+  /* 圆点形状 */
+  cursor: pointer;
+  /* 鼠标悬停时的样式 */
+  font-family: 'Eli.kusa.0.95-demo';
+  /* 自定义字体 */
+  text-align: center;
+  /* 字符居中对齐 */
+  line-height: 16px;
+  /* 行高等于圆点的高度以垂直居中 */
+  color: white;
+  /* 圆点内文字的颜色 */
+  content: '✾';
+  /* 圆点上的符号 */
+  font-size: 16px;
+  /* 圆点上的符号大小 */
+}
