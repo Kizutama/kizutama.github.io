@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  文字の喜怒哀楽 —— スタンプデザイン
-date:   2024-08-26 00:49:11 +0900
+date:   2024-08-22 00:49:11 +0900
 categories: Stamp Design
 ---
 
