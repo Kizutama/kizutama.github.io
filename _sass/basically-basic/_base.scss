@@ -459,3 +459,10 @@ input[type="range"]::-ms-thumb {
   /* 使容器占满整个视口高度 */
   }
 }
+
+// logo展示图图片宽度
+.logo-width {
+  width: 70%;
+  height: auto;
+  /* 保持图片的纵横比 */
+}
