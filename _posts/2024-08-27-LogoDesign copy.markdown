@@ -2,7 +2,7 @@
 layout: post
 title:  ロゴデザイン
 date:   2024-08-22 00:49:11 +0900
-categories: Stamp Design
+categories: Logo Design
 ---
 
 Logo Design 2021-2024

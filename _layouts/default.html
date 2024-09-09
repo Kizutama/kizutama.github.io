@@ -7,6 +7,9 @@
 -->
 <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
   {% include head.html %}
+  <head>
+    <link href="{{ '/assets/stylesheets/lightbox.min.css' | relative_url }}" rel="stylesheet" />
+  </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
 
@@ -52,6 +55,7 @@
 
     {% include footer.html %}
     {% include scripts.html %}
+    <script src="{{ '/assets/javascripts/lightbox.min.js' | relative_url }}"></script>
 
   </body>
 

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% include page-intro.html %}
+
+<main id="main" class="page-content" aria-label="Content">
+  <div class="inner">
+    <article class="entry-wrap">
+      <div class="entry-content">
+        {{ content }}
+      </div>
+
+      <!-- 图片展示部分 -->
+      <div class="machi_photo-gallery">
+        {% assign gallery = site.data.gallery %}
+        <ul class="machi_photo-gallery">
+          {% for image in gallery.images %}
+          <li>
+            <a href="{{ image.image_path | relative_url }}" data-lightbox="gallery" data-title="{{ image.title }}">
+              <img src="{{ image.image_path | relative_url }}" alt="{{ image.title }}">
+              <div class="image-overlay">
+                <span class="image-title">{{ image.title }}</span>
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      {% if site.disqus.shortname %}
+      {% include disqus_comments.html %}
+      {% endif %}
+    </article>
+  </div>
+</main>

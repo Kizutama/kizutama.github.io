@@ -466,3 +466,54 @@ input[type="range"]::-ms-thumb {
   height: auto;
   /* 保持图片的纵横比 */
 }
+
+// 图片数据流
+
+.machi_photo-gallery {
+  column-count: 2;
+  /* 保持你的瀑布流布局设置 */
+  column-gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.machi_photo-gallery li {
+  break-inside: avoid;
+  margin-bottom: 10px;
+  position: relative;
+  /* 为了让 overlay 能够绝对定位 */
+}
+
+.machi_photo-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2px;
+  /* 内边距可以调整 */
+  background: rgba(255, 255, 255, 0.5);
+  /* 50% 透明白色背景 */
+  color: #000;
+  /* 文字颜色 */
+  text-align: left;
+  box-sizing: border-box;
+  /* 确保 padding 不影响宽度 */
+}
+
+.image-title {
+  display: block;
+  margin: 0;
+  font-size: 12px;
+
+  /* 根据需要调整字体大小 */
+  font-family: "KizutamaBlogTitle", "adelle", 'BIZ UDMincho', serif;
+  font-weight: 400;
+  color: #2a282d;
+}
