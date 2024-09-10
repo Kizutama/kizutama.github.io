@@ -3,6 +3,8 @@ layout: post
 title:  文字の喜怒哀楽 —— スタンプデザイン
 date:   2024-08-22 00:49:11 +0900
 categories: Stamp Design
+redirect_from:
+  - /stamp/design/2024/08/21/stemp-copy
 ---
 
 「フォントは文字の感情を伝える」この理念を具象化したいため、漢字スタンプを作ってみました。

@@ -3,6 +3,8 @@ layout: post
 title:  ロゴデザイン
 date:   2024-08-22 00:49:11 +0900
 categories: Logo Design
+redirect_from:
+  - /stamp/design/2024/08/21/logodesign
 ---
 
 Logo Design 2021-2024

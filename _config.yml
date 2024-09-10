@@ -48,6 +48,8 @@ plugins: # previsously gems
   - jekyll-theme-basically-basic
   - jekyll-algolia
   - _plugins/update_image_list.rb
+  - jekyll-redirect-from
+
 feed:
   path: atom.xml
 
